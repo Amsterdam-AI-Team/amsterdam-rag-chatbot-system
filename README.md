@@ -11,7 +11,7 @@ Retrieval Augmented Generation (RAG) Chatbot System designed for the Municipalit
 
 ## Background
 
-The Amsterdam RAG Chatbot System is a project developed to assist citizens and visitors of Amsterdam in easily accessing information related to the municipality. By integrating advanced AI technologies, such as Retrieval Augmented Generation (RAG), the system provides accurate and context-aware responses. The chatbot supports multiple input types, including text and images, and offers flexibility in response generation through different LLMs.
+The Amsterdam RAG Chatbot System is a project developed to assist visitors of the amsterdam.nl website in easily accessing information related to the municipality. The scope could be enhanced by utilizing more data sources. By integrating advanced AI technologies, such as Retrieval Augmented Generation (RAG), the system provides accurate and context-aware responses. The chatbot supports multiple input types, including text and images, and offers flexibility in response generation through different LLMs.
 
 ## Folder Structure
 
@@ -36,24 +36,32 @@ The code has been tested with Python 3.10.0 on Linux/MacOS/Windows.
 
 ## Usage
 
-### Step 1: Populate the Database
+### Step 1: Navigate to scripts
+
+First, navigate to the source directory:
+
+```bash
+cd src
+```
+
+### Step 2: Populate the Database
 
 Before running the chatbot, you need to populate the database with chunked documents. This is done by running the following script:
 
 ```bash
-python populate_database.py
+python3 populate_database.py
 ```
 
 This script will process and store the documents in the database, making them available for retrieval during chatbot interactions. Demonstration document data has been added in the [`data`](./data) folder
 
 **Note**: The current setup requires an OpenAI API key for populating the database (i.e., embedding the documents). These API keys can be added in the configuration file.
 
-### Step 2: Run the Chatbot
+### Step 3: Run the Chatbot
 
 Once the database is populated, you can run the chatbot locally by executing the following command:
 
 ```bash
-python app.py
+python3 app.py
 ```
 
 This will start the chatbot on your localhost, allowing you to interact with it via a web interface.
