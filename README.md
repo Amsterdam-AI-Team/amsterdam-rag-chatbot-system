@@ -52,7 +52,7 @@ Before running the chatbot, you need to populate the database with chunked docum
 python3 populate_database.py
 ```
 
-This script will process and store the documents in the database, making them available for retrieval during chatbot interactions. Demonstration document data has been added in the [`data`](./data) folder
+This script will process and store the documents in the database, making them available for retrieval during chatbot interactions. Demonstration document data has been added in the [`data`](./data) folder. Our repository to [scrape the contents of amsterdam.nl](https://github.com/Amsterdam-AI-Team/amsterdam-nl-website-scraper/tree/main) can be utilized to obtain more documents to populate the database.
 
 **Note**: The current setup requires an OpenAI API key for populating the database (i.e., embedding the documents). These API keys can be added in the configuration file.
 
