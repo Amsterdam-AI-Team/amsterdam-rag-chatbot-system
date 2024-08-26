@@ -3,6 +3,12 @@
 
 Retrieval Augmented Generation (RAG) Chatbot System designed for the Municipality of Amsterdam. This system answers questions regarding municipal information on the website, supports both textual and image prompts, and leverages multiple Large Language Models (LLMs) for generation and text-to-speech streaming.
 
+<figure align="center">
+  <img
+  src="media/interface.png"
+  alt="rag chatbot system interface">
+</figure>
+
 ## Background
 
 The Amsterdam RAG Chatbot System is a project developed to assist citizens and visitors of Amsterdam in easily accessing information related to the municipality. By integrating advanced AI technologies, such as Retrieval Augmented Generation (RAG), the system provides accurate and context-aware responses. The chatbot supports multiple input types, including text and images, and offers flexibility in response generation through different LLMs.
@@ -26,7 +32,7 @@ git clone https://github.com/Amsterdam-AI-Team/amsterdam-rag-chatbot-system.git
 pip install -r requirements.txt
 ```
 
-The code has been tested with Python x.x on Linux/MacOS/Windows.
+The code has been tested with Python 3.10.0 on Linux/MacOS/Windows.
 
 ## Usage
 
@@ -38,7 +44,9 @@ Before running the chatbot, you need to populate the database with chunked docum
 python populate_database.py
 ```
 
-This script will process and store the documents in the database, making them available for retrieval during chatbot interactions.
+This script will process and store the documents in the database, making them available for retrieval during chatbot interactions. Demonstration document data has been added in the [`data`](./data) folder
+
+**Note**: The current setup requires an OpenAI API key for populating the database (i.e., embedding the documents). These API keys can be added in the configuration file.
 
 ### Step 2: Run the Chatbot
 
@@ -49,6 +57,12 @@ python app.py
 ```
 
 This will start the chatbot on your localhost, allowing you to interact with it via a web interface.
+
+**Note**: You will need an OpenAI, Google, and/or Groq API key for answer generation, depending on the model of your choice. These API keys should also be specified in the configuration file. It is possible to use different LLMs of your choice, but doing so will require modifying the code accordingly. 
+
+**Note**: You will need an OpenAI API key for image processing (i.e., getting an image description). This API key should be specified in the configuration file. It is possible to use image processing tools of your choice, but doing so will require modifying the code accordingly. 
+
+**Note**: the Groq models (Llama3 (70b) and Mixtral) only allows for tokens-per-minute (tpm) of 5000. You could utilize different API's for the Groq models to allow for higher tpm.
 
 ## Contributing
 
