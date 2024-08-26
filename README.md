@@ -1,19 +1,16 @@
+
 # Amsterdam RAG Chatbot System
 
-Retrieval Augmented Generation (RAG) Chatbot System that is designed for the Municipality of Amsterdam and can answer question regarding municipal information on the website. Suports textual and image prompts, multiple LLMs for generation and text-to-speech streaming.
+Retrieval Augmented Generation (RAG) Chatbot System designed for the Municipality of Amsterdam. This system answers questions regarding municipal information on the website, supports both textual and image prompts, and leverages multiple Large Language Models (LLMs) for generation and text-to-speech streaming.
 
 ## Background
 
+The Amsterdam RAG Chatbot System is a project developed to assist citizens and visitors of Amsterdam in easily accessing information related to the municipality. By integrating advanced AI technologies, such as Retrieval Augmented Generation (RAG), the system provides accurate and context-aware responses. The chatbot supports multiple input types, including text and images, and offers flexibility in response generation through different LLMs.
+
 ## Folder Structure
 
-* [`data`](./data): Sample data for demo purposes
-* [`docs`](./docs): If main [README.md](./README.md) is not enough
-* [`notebooks`](./notebooks): Jupyter notebooks / tutorials
-* [`res`](./res): Relevant resources, e.g. [`images`](./res/images/) for the documentation
-* [`scripts`](./scripts): Scripts for automating tasks
-* [`src`](./src): All sourcecode files specific to this project
-* [`tests`](./tests) Unit tests
-* ...
+* [`data`](./data): Sample data for demo purposes.
+* [`src`](./src): All source code files specific to this project.
 
 ## Installation 
 
@@ -23,52 +20,45 @@ Retrieval Augmented Generation (RAG) Chatbot System that is designed for the Mun
 git clone https://github.com/Amsterdam-AI-Team/amsterdam-rag-chatbot-system.git
 ```
 
-
-
-
 2) Install all dependencies:
-    
-
 
 ```bash
 pip install -r requirements.txt
 ```
 
-
-
-The code has been tested with Python x.x on Linux/MacOS/Windows. 
+The code has been tested with Python x.x on Linux/MacOS/Windows.
 
 ## Usage
 
-## How it works
+### Step 1: Populate the Database
 
-Can be divided in subsections:
+Before running the chatbot, you need to populate the database with chunked documents. This is done by running the following script:
 
-### input
-### algorithm
-### output
+```bash
+python populate_database.py
+```
 
-OR
+This script will process and store the documents in the database, making them available for retrieval during chatbot interactions.
 
-### training
-### prediction
-### evaluation
+### Step 2: Run the Chatbot
+
+Once the database is populated, you can run the chatbot locally by executing the following command:
+
+```bash
+python app.py
+```
+
+This will start the chatbot on your localhost, allowing you to interact with it via a web interface.
 
 ## Contributing
 
-Feel free to help out! [Open an issue](https://github.com/Amsterdam-AI-Team/amsterdam-rag-chatbot-system/issues), submit a [PR](https://github.com/Amsterdam-AI-Team/amsterdam-rag-chatbot-system/pulls) or [contact us](https://amsterdamintelligence.com/contact/).
-
-
-
+We welcome contributions! Feel free to [open an issue](https://github.com/Amsterdam-AI-Team/amsterdam-rag-chatbot-system/issues), submit a [pull request](https://github.com/Amsterdam-AI-Team/amsterdam-rag-chatbot-system/pulls), or [contact us](https://amsterdamintelligence.com/contact/) directly.
 
 ## Acknowledgements
 
 This repository was created by [Amsterdam Intelligence](https://amsterdamintelligence.com/) for the City of Amsterdam.
 
-
-
 Optional: add citation or references here.
-
 
 ## License 
 
