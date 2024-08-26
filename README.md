@@ -5,8 +5,9 @@ Retrieval Augmented Generation (RAG) Chatbot System designed for the Municipalit
 
 <figure align="center">
   <img
-  src="media/amsterdam-rag-chatbot-system-interface.png"
-  alt="rag chatbot system interface">
+  src="media/demo.gif"
+  alt="rag chatbot system interface"
+  width="1000">
 </figure>
 
 ## Background
