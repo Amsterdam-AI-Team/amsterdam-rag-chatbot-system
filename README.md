@@ -10,6 +10,14 @@ Retrieval Augmented Generation (RAG) Chatbot System designed for the Municipalit
   width="1000">
 </figure>
 
+<hr style="border: 1px solid #ccc; width: 80%; margin-top: 40px; margin-bottom: 40px;">
+
+<figure align="center">
+  <img
+  src="media/model-selection-menu.png"
+  alt="model selection menu">
+</figure>
+
 ## Background
 
 The Amsterdam RAG Chatbot System is a project developed to assist visitors of the amsterdam.nl website in easily accessing information related to the municipality. The scope could be enhanced by utilizing more data sources. By integrating advanced AI technologies, such as Retrieval Augmented Generation (RAG), the system provides accurate and context-aware responses. The chatbot supports multiple input types, including text and images, and offers flexibility in response generation through different LLMs.
