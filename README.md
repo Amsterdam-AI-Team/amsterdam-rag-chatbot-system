@@ -81,6 +81,10 @@ python3 app.py
 
 This will start the chatbot on your localhost, allowing you to interact with it via a web interface.
 
+### Running via Azure ML
+
+If you wish to run this code via Azure ML services, you should open and run the repository in VS Desktop mode. This will ensure the localhost application works properly.
+
 **Note**: You will need an OpenAI, Google, and/or Groq API key for answer generation, depending on the model of your choice. These API keys should also be specified in the configuration file. It is possible to use different LLMs of your choice, but doing so will require modifying the code accordingly. 
 
 **Note**: You will need an OpenAI API key for image processing (i.e., getting an image description). This API key should be specified in the configuration file. It is possible to use image processing tools of your choice, but doing so will require modifying the code accordingly. 
