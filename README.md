@@ -35,7 +35,13 @@ The Amsterdam RAG Chatbot System is a project developed to assist visitors of th
 git clone https://github.com/Amsterdam-AI-Team/amsterdam-rag-chatbot-system.git
 ```
 
-2) Install all dependencies:
+2) Install pyaudio driver:
+
+```bash
+sudo apt-get install portaudio19-dev
+```
+
+3) Install all dependencies:
 
 ```bash
 pip install -r requirements.txt
